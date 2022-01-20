@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 25%;
+  margin-top: 30px;
+  display: flexbox;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container header header {
+    width: 100px;
+  }
+}
+
+.container header h1 {
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
+  margin: 10px;
+  color: #969696;
+}
+
+.container header h1 span {
+  color: #151f29;
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 760px) {
+  .container header h1 span span {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.container header p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #969696;
+}
+
+.container .image__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .image__container img {
+  width: 50rem;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 750px) {
+  .container .image__container img {
+    width: 30rem;
+    margin-top: 90px;
+  }
+}
+
+.container img {
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+  width: 4rem;
+}
+
+.container .main__info {
+  width: 163%;
+}
+
+.container .main__info .input__fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -20px;
+}
+
+.container .main__info .input__fields input {
+  padding: 15px;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid #969696;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+.container .main__info .no__field {
+  font-size: 13px;
+  color: red;
+  margin: 15px;
+  display: none;
+  margin-bottom: 0px;
+}
+
+.container .main__info .no__valid__email {
+  font-size: 13px;
+  color: red;
+  margin: 15px;
+  display: none;
+  margin-bottom: 0px;
+}
+
+.container button {
+  background: #4f7df3;
+  color: #fff;
+  padding: 15px;
+  width: 150px;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 0px 4px #c3c3c3;
+          box-shadow: 0px 0px 4px #c3c3c3;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+  .container button {
+    position: absolute;
+    margin-top: 60px;
+    width: 63%;
+  }
+}
+
+.container button:hover {
+  background: #4f7df3;
+  -webkit-box-shadow: 0px 0px 10px 5px #c2d3ff;
+          box-shadow: 0px 0px 10px 5px #c2d3ff;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 50px;
+  color: #969696;
+}
+/*# sourceMappingURL=style.css.map */

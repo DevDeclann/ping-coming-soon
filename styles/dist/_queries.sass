@@ -1,0 +1,42 @@
+@mixin phone()
+  @media screen and (max-width: 750px) 
+      width: 50%; 
+        
+@mixin buttonAbsolute()
+  @media screen and ( max-width: 760px )
+    position: absolute;
+    margin-top: 60px;
+    width: 63%;
+
+@mixin desktop()
+  @media screen and (max-width: 1024px) 
+      width: 50%; 
+
+@mixin fieldErrs()
+  font-size: 13px;
+  color: red;
+  margin: 15px;
+  display: none;
+  margin-bottom: 0px;
+
+@mixin errorStates()
+  @media screen and ( max-width: 760px )
+    span
+      display: none;
+      margin: 0;
+      padding: 0;
+      
+@mixin inputFields()
+  margin-left: -20px
+
+@mixin image()
+  @media screen and (max-width: 750px)
+    width: 30rem;
+    margin-top: 90px;     
+
+@mixin title()
+  @media screen and ( max-width: 1000px )
+    header
+      width: 100px;
+  
+  

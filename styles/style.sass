@@ -1,0 +1,93 @@
+.attribution { font-size: 11px; text-align: center; margin-top: 5px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+@import 'dist/variables';
+@import 'dist/queries';
+
+*
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Libre Franklin', sans-serif;
+
+.container
+    margin: 0 auto;
+    width: 25%;
+    margin-top: 30px;
+    display: flexbox;
+    @include phone()
+    @include desktop()
+
+    header
+        @include title()
+        h1
+            font-family: 'Libre Franklin', sans-serif;
+            text-align: center;
+            margin: 10px;
+            color: $Gray;
+            span
+                @include errorStates()
+                color: $VeryDarkBlue;
+                font-family: sans-serif;
+
+        p
+            text-align: center;
+            margin-bottom: 20px; 
+            color: $Gray;
+
+    .image__container
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img
+            width: 50rem;
+            margin-top: 40px;     
+            @include image()
+    img
+        margin: auto;
+        display: block;
+        margin-bottom: 20px;
+        width: 4rem;
+
+    .main__info
+        width: 163%;                         
+
+        .input__fields
+            display: flex;
+            @include inputFields()
+            input
+                padding: 15px;
+                border-radius: 50px;
+                outline: none;
+                border: 1px solid $Gray;
+                width: 300px;
+                display: flex;
+                margin-right: 10px;
+
+        .no__field
+            @include fieldErrs()
+
+        .no__valid__email
+            @include fieldErrs()
+
+    button 
+        background: $Blue;
+        color: #fff;
+        padding: 15px;
+        width: 150px;
+        outline: none;
+        border: none;
+        border-radius: 100px;
+        box-shadow: 0px 0px 4px #c3c3c3;
+        cursor: pointer;
+        @include buttonAbsolute()
+        &:hover
+            background: $Blue;
+            box-shadow: 0px 0px 10px 5px $PaleBlue;
+
+.copyright
+    text-align: center;
+    margin-top: 50px;
+    color: $Gray;
